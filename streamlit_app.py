@@ -42,3 +42,6 @@ my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_data_rows = my_cur.fetchall()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_rows)
+
+add_my_fruit = streamlit.text_input('What fruit would you like to add?')
+if streamlit.button('Add a Fruit to the List'):
